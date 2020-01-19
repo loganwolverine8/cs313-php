@@ -1,0 +1,166 @@
+body{ 
+    background-color: black;
+}
+
+header{
+        color: silver;
+        text-align: center;
+        justify-content: space-around;
+        min-hight: 100px;
+        width: auto;
+        font-size: 30pt;
+        background-color: black;
+}
+
+
+.menubar {
+        color: teal;
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+        width: auto;
+        font-size: 15pt;
+        background-color: gold;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+.active {
+  background-color: #4CAF50;
+}
+
+
+
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+h2 {
+  color: yellow;
+  font-size: 38px;
+  text-align: center;
+}
+
+.flex-grid {
+  color: white;
+  display: flex;
+  margin: auto 
+}
+
+.col {
+  background-color: black;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 1rem;
+}
+
+.sidebar {
+  flex: .5;
+  border-style: solid;
+  border-width: 5px;
+  border-color: silver;
+}
+
+.main {
+  flex: 3;
+  border-style: solid;
+  border-width: 5px;
+  border-color: silver;
+  font-size: 18pt;
+}
+footer{ 
+    bottom:1px; 
+    color: silver;
+    text-align: center;
+    position:center;
+    margin: 8px;
+    margin-top: 20px;
+    padding: 20px;
+
+    border-style: solid;
+    border-width: 5px;
+    border-color: silver;
+}
+
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+
+  }
+
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column2 {
+    flex: 100%;
+    max-width: 100%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+
+.column text{
+  text-align: center;
+}
+
+.column2 text{
+  text-align: center;
+}
+
+
+@media (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+
+  
+  @media (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  
+
+.redline{
+   border: 4px 
+   color:solid red;
+  }
+
