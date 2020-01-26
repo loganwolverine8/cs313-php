@@ -126,9 +126,11 @@ a.btnRemoveAction:visited {
     font-weight: 600;
 }
 
-.product-image {
+.img {
+    float:  left;
+    width:  100px;
     height: 100px;
-    background-color: #FFF;
+    background-size: cover;
 }
 
 .clear-float {
