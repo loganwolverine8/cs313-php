@@ -37,7 +37,7 @@ switch($action) {
 				$_SESSION["cart_item"] = $itemArray;
 			}
 		}
-		include 'view/browse.php';
+		include 'browse.php';
 	break;
 	
 	case "remove":
@@ -49,7 +49,7 @@ switch($action) {
 						unset($_SESSION["cart_item"]);
 			}
 		}
-		include 'view/browse.php';
+		include 'browse.php';
 	break;
 	
 	case "details":
@@ -58,14 +58,14 @@ switch($action) {
 				$itemArray = $key;
 			}
 		}
-		include 'view/details.php';
+		include 'details.php';
 	break;
 	case "view":
-		include 'view/cart.php';
+		include 'cart.php';
 	break;
 
 	case "checkout":
-		include 'view/checkout.php';
+		include 'checkout.php';
 	break;
 
 	case "orderconfirm":
@@ -79,16 +79,16 @@ switch($action) {
 		$clientZipcode = filter_input(INPUT_POST, 'zipcode', FILTER_SANITIZE_STRING);
 	
 
-		include 'view/orderconfirm.php';
+		include 'orderconfirm.php';
 	break;
 
 	case "empty":
 		unset($_SESSION["cart_item"]);
-		include 'view/browse.php';
+		include 'browse.php';
 	break;	
 	
 	default:
-		include 'view/browse.php';
+		include 'browse.php';
 		break;
 
 }
