@@ -6,6 +6,7 @@
 	<title>Simple PHP Shopping Cart</title>
 	<link href="style.css" type="text/css" rel="stylesheet" />
 </head>
+
 <body>
 	<main>
 		<div id="shopping-cart">
