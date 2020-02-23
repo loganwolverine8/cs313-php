@@ -28,7 +28,8 @@ $course_code = $notes_rows[0]['code'];
 	<title>Course Notes</title>
 </head>
 <body>
-<h1>Course Notes for <?php echo $course_code; ?></h1>
+<h1>Course Notes for <?php echo $course_code;?></h1>
+
 <?php
 foreach ($note_rows as $note_row)
 {
