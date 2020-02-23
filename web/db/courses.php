@@ -3,10 +3,10 @@ include('dbConnect.php');
 $db = get_db();
 
 
-$query = SELECT id, code, name FROM course;
+$query = 'SELECT id, code, name FROM course';
 $stmt = $db->prepare($query);
 $stmt->execute();
-$courses = $stmt->fetchALL(PDO::FETCH_ASSOC);
+$courses = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 
