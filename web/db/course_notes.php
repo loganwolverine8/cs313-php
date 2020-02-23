@@ -6,7 +6,7 @@ if (!isset($_GET['course_id']))
 }
 $course_id = htmlspecialchars($_GET['course_id']);
 
-include('dbConnect.php');
+require('dbConnect.php');
 $db = get_db();
 
 
@@ -16,7 +16,7 @@ $stmt->execute();
 $note_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 
-$course_code = $notes_rows[0]['code'];
+$course_code = $note_rows[0]['code'];
 
 ?>
 
