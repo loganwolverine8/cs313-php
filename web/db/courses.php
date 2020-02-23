@@ -14,6 +14,7 @@ $courses = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <html>
 <head>
 	<title>Courses</title>
+	<link href="course.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 	<h1>Courses</h1>

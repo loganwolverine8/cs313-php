@@ -26,6 +26,7 @@ $course_code = $note_rows[0]['code'];
 <html>
 <head>
 	<title>Course Notes</title>
+	<link href="course.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <h1>Course Notes for <?php echo $course_code;?></h1>
