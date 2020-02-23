@@ -1,7 +1,7 @@
 <?php
 
 $course_id = htmlspecialchars($_POST['course_id']);
-$note_content = htmlspecialchars($_POST['note_content']);
+$content = htmlspecialchars($_POST['note_content']);
 
 require('dbConnect.php');
 $db = get_db();
