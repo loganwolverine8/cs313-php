@@ -2,21 +2,11 @@
 include('dbConnect.php');
 $db = get_db();
 
-// from reading
-//$stmt = $db->prepare('SELECT * FROM table WHERE id=:id AND name=:name');
-//$stmt->bindValue(':id', $id, PDO::PARAM_INT);
-//$stmt->bindValue(':name', $name, PDO::PARAM_STR);
-//$stmt->execute();
-//$rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 $query = SELECT id, code, name FROM course;
 $stmt = $db->prepare($query);
 $stmt->execute();
 $courses = $stmt->fetchALL(PDO::FETCH_ASSOC);
-
-
-
-
 ?>
 
 
@@ -40,6 +30,7 @@ foreach ($courses as $course)
 	echo "<li><p>$code - $name</p></li>"
 }
 ?>
+	</ul>
 		
 
 </body>
