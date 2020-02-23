@@ -27,8 +27,8 @@ foreach ($courses as $course)
 	$code = $course['code'];
 	$name = $course['name'];
 
-	echo "<li><p>$code - $name</p></li>"
-};
+	echo "<li><p>$code - $name</p></li>";
+}
 ?>
 	</ul>
 		
