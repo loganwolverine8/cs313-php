@@ -1,8 +1,8 @@
-<?php>
+<?php
 
 if (!isset($_GET['course_id']))
 {
-	die("Error, course id not specified..");
+	die("Error, course id not specified...");
 }
 $course_id = htmlspecialchars($_GET['course_id']);
 
